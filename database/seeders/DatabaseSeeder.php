@@ -15,10 +15,8 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
 
-        User::factory()->create([
-            'name' => 'vaneath',
-            'email' => 'vaneath@gmail.com',
-            'role' => 'admin',
-        ]);
+        //Seed User Table Data
+        $this->call(UserSeeder::class);
+
     }
 }
